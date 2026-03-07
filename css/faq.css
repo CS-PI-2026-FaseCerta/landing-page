@@ -10,6 +10,12 @@ body li {
     padding: 5rem 1.5rem;
 }
 
+.faq-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
 .faq-cabecalho {
     display: flex;
     flex-direction: column;
@@ -30,6 +36,12 @@ body li {
     margin: 0;
 }
 
+.faq-questoes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .icone-flecha {
     width: 1rem;
     height: 1rem;
@@ -38,7 +50,10 @@ body li {
 .faq-details {
     border: 1px solid #E0DAE7;
     border-radius: 1rem;
-    padding: 1rem;
+}
+
+.faq-details[open] {
+    background: #F8FAFC;
 }
 
 .faq-summary {
@@ -46,8 +61,20 @@ body li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    cursor: pointer;
 }
 
 .faq-summary h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    width: 90%;
+}
+
+.faq-details p {
+    border-top: 1px solid #E0DAE7;
+    padding: 1rem;
+    font-size: .9rem;
+    line-height: 1.3rem;
+    color: #475569;
+    margin: 0;
 }
