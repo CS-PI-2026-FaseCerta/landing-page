@@ -103,21 +103,7 @@ width: 11%;
 
 }
 
-.btn-font{
 
-  border: none;
-  height: 2rem;
-  width: 2rem;
-  margin-right: 6%;
-  font-size: 2rem;
-  background: none;
-}
-.btn-font:hover {
-  transform: translateY(-5px);
-
-  cursor: pointer;
-
-}
 @media (max-width: 768px) {
   .div-btn-head { 
       justify-content: center;
@@ -186,6 +172,35 @@ width: 11%;
 }
 .navlinks a:hover {
   color: var(--cp);
+}
+
+.i{
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  bottom: 50px;
+  width: 100%;
+  justify-content: end;
+}
+
+.btn-font {
+  border: none;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6%;
+  font-size: 2rem;
+padding: 1rem;
+  background: rgba(228, 227, 227, 0.7);
+}
+
+.btn-font:hover {
+  transform: translateY(-5px);
+
+  cursor: pointer;
+
 }
 
 
