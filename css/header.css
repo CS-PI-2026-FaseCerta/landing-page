@@ -22,6 +22,7 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 10px 20px;
+  
   border: none;
   border-radius: 8px;
   background-color: var(--cp);
@@ -95,13 +96,42 @@ body {
   background-color: #e9ebee;
 }
 
+.div-btn-head{
+display: flex;
+gap: 1rem;
+width: 11%;
+
+}
+
 .btn-font{
+
   border: none;
   height: 2rem;
   width: 2rem;
+  margin-right: 6%;
+  font-size: 2rem;
+  background: none;
 }
+.btn-font:hover {
+  transform: translateY(-5px);
 
+  cursor: pointer;
+
+}
 @media (max-width: 768px) {
+  .div-btn-head { 
+      justify-content: center;
+        width: 40%;
+    }
+        .btn-font {
+          display: none;
+          border: none;
+          height: 2rem;
+          width: 2rem;
+          margin-right: 6%;
+          font-size: 2rem;
+          background: none;
+        }
   .navbar-inner {
     max-width: 100%;
     padding: 0 16px;
