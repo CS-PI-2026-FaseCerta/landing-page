@@ -13,7 +13,8 @@ body {
   --bj: #ffffff;
   --cp: #5600b2;
 
-  --ft: 0rem;
+  --fs-a: 1.25rem;
+  --fs-p: 1.25rem;
 }
 
 .btn {
@@ -22,7 +23,7 @@ body {
   justify-content: center;
   gap: 10px;
   padding: 10px 20px;
-  
+
   border: none;
   border-radius: 8px;
   background-color: var(--cp);
@@ -85,7 +86,7 @@ body {
 
 .m-navlinks a {
   padding: 0.5rem 1rem;
-  font-size: calc(1.25rem+var(--ft));
+  font-size: var(--fs-a);
   font-weight: 600;
   text-decoration: none;
   color: inherit;
@@ -96,28 +97,26 @@ body {
   background-color: #e9ebee;
 }
 
-.div-btn-head{
-display: flex;
-gap: 1rem;
-width: 11%;
-
+.div-btn-head {
+  display: flex;
+  gap: 1rem;
+  width: 11%;
 }
 
-
 @media (max-width: 768px) {
-  .div-btn-head { 
-      justify-content: center;
-        width: 40%;
-    }
-        .btn-font {
-          display: none;
-          border: none;
-          height: 2rem;
-          width: 2rem;
-          margin-right: 6%;
-          font-size: 2rem;
-          background: none;
-        }
+  .div-btn-head {
+    justify-content: center;
+    width: 40%;
+  }
+  .btn-font {
+    display: none;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 6%;
+    font-size: 2rem;
+    background: none;
+  }
   .navbar-inner {
     max-width: 100%;
     padding: 0 16px;
@@ -168,13 +167,15 @@ width: 11%;
 .navlinks a {
   text-decoration: none;
   font-weight: 600;
+  font-size: var(--fs-a);
+
   color: #1e293b;
 }
 .navlinks a:hover {
   color: var(--cp);
 }
 
-.i{
+.i {
   position: fixed;
   z-index: 50;
   display: flex;
@@ -192,17 +193,28 @@ width: 11%;
   justify-content: center;
   margin-right: 6%;
   font-size: 2rem;
-padding: 1rem;
+  padding: 2rem;
   background: rgba(228, 227, 227, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid color-mix(in srgb, #e2e8f0 70%, transparent);
+  border-radius: 50%;
 }
 
 .btn-font:hover {
   transform: translateY(-5px);
-
   cursor: pointer;
-
+  outline: none;
 }
 
+@media (max-width: 768px) {
+  .btn-font {
+    height: 1rem;
+    width: 1rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
 
 /*PRECOS E PLANOS*/
 
