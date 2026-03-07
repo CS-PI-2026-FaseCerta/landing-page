@@ -98,6 +98,6 @@ body li {
 
 @media(min-width: 768px) {
     .faq-conteudo {
-        padding: 0 32rem;
+        padding: 0 27vw;
     }
 }
