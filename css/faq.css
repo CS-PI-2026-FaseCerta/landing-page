@@ -65,6 +65,23 @@ body li {
     cursor: pointer;
 }
 
+.faq-summary::after {
+    content: "";
+
+    background-image: url(../assets/img/icons/icone-flecha-faq.png);
+    background-repeat: no-repeat;
+    width: 1rem;
+    height: 1rem;
+    float: right;
+    background-size: contain;
+    transition: 0.3s;
+}
+
+.faq-details[open] .faq-summary::after {
+    background-image: url(../assets/img/icons/icone-flecha-faq.png);
+    transform: rotate(180deg);
+}
+
 .faq-summary h1 {
     font-size: 1rem;
     width: 90%;
@@ -77,4 +94,10 @@ body li {
     line-height: 1.3rem;
     color: #475569;
     margin: 0;
+}
+
+@media(min-width: 768px) {
+    .faq-conteudo {
+        padding: 0 32rem;
+    }
 }
