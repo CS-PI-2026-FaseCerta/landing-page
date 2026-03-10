@@ -141,6 +141,17 @@ body {
 
 
 @media (min-width: 768px) {
+
+    .conteiner-cartao a {
+        color: #64748B;
+        text-decoration: none;
+        font-size: 0.9rem;
+    }
+
+    .conteiner-cartao a:hover {
+        color: #5600B2;
+    }
+    
     body {
         margin: 0;
     }
@@ -314,5 +325,21 @@ body {
         transform: scale(0.99)
     }
 
+@media (max-width: 900px) {
+
+    .conteiner-contato-conteudo {
+
+        flex-direction: column;
+        gap: 40px;
+
+    }
+
+    .conteiner-nome-email {
+
+        flex-direction: column;
+
+    }
+
+}
 
 }
