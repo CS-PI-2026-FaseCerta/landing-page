@@ -108,6 +108,11 @@ body {
     justify-content: center;
     width: 40%;
   }
+  .div-btn-head .btn {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+  }
   .btn-font {
     display: none;
     border: none;
