@@ -100,7 +100,7 @@ body {
 .div-btn-head {
   display: flex;
   gap: 1rem;
-  width: 11%;
+  width: 14%;
 }
 
 @media (max-width: 768px) {
