@@ -43,14 +43,20 @@
     transition: 0.2s;
 }
 
+
+
 #card-popular {
     border: 2px solid #5600B2;
 }
 
-.planos-card-ativo {
-    border: 1px solid #a980d6;
-    box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+@media (hover: none) {
+    .planos-card-ativo {
+        border: 1px solid #a980d6;
+        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+    }
 }
+
+
 
 .planos-card p,h1,h2,h3 {
     margin: 0;
@@ -87,13 +93,18 @@
     font-size: 1rem;
     border: none;
     transition: 0.2s;
+    cursor: pointer;
+}   
+
+@media (hover: none) {
+    .planos-card-ativo button {
+        background-color: #5600B2;
+        border-radius: .5rem;
+        color: white;
+    }
 }
 
-.planos-card-ativo button {
-    background-color: #5600B2;
-    border-radius: .5rem;
-    color: white;
-}
+
 
 #card-popular button {
     background-color: #5600B2;
@@ -105,7 +116,7 @@
 .planos-card-beneficios {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding: 0;
 }
 
@@ -113,7 +124,7 @@
     display: flex;
     gap: 1rem;
     color: #334155;
-    font-size: 0.8rem;
+    font-size: .9rem;
     font-weight: 600;
 }
 
@@ -143,4 +154,54 @@
     font-size: 0.7rem;
     color: white;
     font-weight: 900;
+}
+
+.planos-card h1 {
+    font-weight: 900;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .planos {
+        padding: 7rem 8rem;
+    }
+
+    .planos-opcoes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #card-popular h3 {
+        left: 6.8rem;
+    }
+
+    .planos-card:hover {
+        border: 1px solid #a980d6;
+        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+    }
+
+    .planos-card:hover button {
+        background-color: #5600B2;
+        border-radius: .5rem;
+        color: white;
+        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+    }
+
+    #card-popular:hover {
+        border: 5px solid #5600B2;
+    }
+
+    #card-popular button {
+        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+    }
+
+    .planos-card button:active {
+        background-color: #3a0079;
+    }
+
+    #card-popular button:active {
+        background-color: #3a0079;
+    }
 }
