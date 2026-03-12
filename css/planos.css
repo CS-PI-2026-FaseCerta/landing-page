@@ -1,9 +1,9 @@
 
 .planos {
-    padding: 7rem 1rem;
+    padding: 7rem 1.8rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .planos-cabecalho {
@@ -22,9 +22,15 @@
 
 .planos-cabecalho h1 {
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     text-align: center;
     margin: 0;
+}
+
+.planos-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .planos-card {
@@ -34,6 +40,11 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    transition: 0.2s;
+}
+
+#card-popular {
+    border: 2px solid #5600B2;
 }
 
 .planos-card-ativo {
@@ -84,6 +95,13 @@
     color: white;
 }
 
+#card-popular button {
+    background-color: #5600B2;
+    border-radius: .5rem;
+    color: white;
+    box-shadow: 0 0.2rem 1rem #8462a8;
+}
+
 .planos-card-beneficios {
     display: flex;
     flex-direction: column;
@@ -107,4 +125,22 @@
 #basico-item-retirado {
     color: #CBD5E1;
     text-decoration: line-through;
+}
+
+#card-popular .planos-card-cabecalho {
+    position: relative;
+}
+
+#card-popular h3 {
+    position: absolute;
+    top: -3rem;
+    left: 3rem;
+    background-color: #5600B2;
+    padding: 1rem;
+    width: fit-content;
+    line-height: 0;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 900;
 }
