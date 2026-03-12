@@ -13,7 +13,7 @@ body {
   --bj: #ffffff;
   --cp: #5600b2;
 
-  --fs-a: 1.25rem;
+  --fs-a: 1.25rem; /*20px*/
   --fs-p: 1.25rem;
 }
 
@@ -219,24 +219,4 @@ body {
     padding: 1.5rem;
     font-size: 1.2rem;
   }
-}
-
-/*PRECOS E PLANOS*/
-
-.precos-text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.precos-text h3 {
-  font-size: 1.25rem;
-  color: #5600b2;
-}
-.precos-text p {
-  font-size: 2.25rem;
-  font-weight: 900;
-  text-align: center;
-  margin-top: 0;
 }
