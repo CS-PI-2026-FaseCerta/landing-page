@@ -117,7 +117,7 @@ body {
     .planos-card-ativo button {
         background-color: var(--roxo-primario);
         border-radius: .5rem;
-        color: var(--planos-card-botao-color);
+        color: var(--planos-card-ativo-botao);
     }
 }
 
@@ -210,7 +210,7 @@ body {
     .planos-card:hover button {
         background-color: var(--roxo-primario);
         border-radius: .5rem;
-        color: var(--planos-card-botao-color);
+        color: white;
         box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
     }
 
