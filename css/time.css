@@ -38,6 +38,12 @@
   gap: 1rem;
 }
 
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .card-pessoal {
   box-sizing: border-box;
   display: flex;
@@ -59,10 +65,14 @@
 
 @media (min-width: 768px) {
   .time-cards {
+    flex-direction: column;
+  }
+  .inner {
     flex-direction: row;
+    gap: 6rem;
   }
   .card-pessoal {
-    width: 240px;
+    width: 320px;
   }
 }
 

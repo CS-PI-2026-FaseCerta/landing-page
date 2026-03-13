@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+}
+
+.planos {
+    padding: 7rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background-color: var(--planos-bg);
+}
+
+.planos-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.planos-cabecalho h2 {
+    color: var(--planos-titulo-secao);
+    margin: 0;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+}
+
+.planos-cabecalho h1 {
+    font-weight: 900;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0;
+    color: var(--planos-titulo-cabecalho);
+}
+
+.planos-opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.planos-card {
+    padding: 2rem;
+    border: 1px solid var(--planos-borda-card);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    transition: 0.2s;
+    background: var(--planos-card-bg);
+}
+
+
+
+#card-popular {
+    border: 2px solid var(--roxo-primario);
+    background-color: var(--planos-card-popular-bg);
+}
+
+@media (hover: none) {
+    .planos-card-ativo {
+        border: 1px solid var(--planos-borda-card-ativo);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
+    }
+
+    #card-popular.planos-card-ativo {
+    border: 4px solid var(--roxo-primario);
+}
+}
+
+
+
+.planos-card p,h1,h2,h3 {
+    margin: 0;
+}
+
+.planos-card-cabecalho {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.planos-card-cabecalho p {
+    color: var(--planos-card-descricao);
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+
+.planos-card-cabecalho h2, h1 {
+    color: var(--planos-titulo-cabecalho);
+}
+
+#planos-card-valor {
+    color: var(--planos-card-preco);
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+#planos-card-mes {
+    color: var(--planos-card-descricao);
+    font-weight: 700;
+}
+
+.planos-card button {
+    width: 100%;
+    height: 3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    color: var(--planos-card-botao-color);
+    background-color: var(--planos-card-botao-bg);
+    border-radius: .5rem;
+}   
+
+@media (hover: none) {
+    .planos-card-ativo button {
+        background-color: var(--roxo-primario);
+        border-radius: .5rem;
+        color: var(--planos-card-ativo-botao);
+    }
+}
+
+
+
+#card-popular button {
+    background-color: var(--roxo-primario);
+    border-radius: .5rem;
+    color: var(--planos-card-ativo-botao);
+    box-shadow: 0 0.2rem 1rem var(--planos-card-popular-botao-sombra);
+}
+
+.planos-card-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0;
+}
+
+.planos-card-beneficios li {
+    display: flex;
+    gap: 1rem;
+    color: var(--planos-card-beneficios);
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.planos-card-beneficios img {
+    width: 1rem;
+    height: 1rem;
+}
+
+#basico-item-retirado {
+    color: var(--planos-card-beneficios-retirado);
+    text-decoration: line-through;
+}
+
+#card-popular .planos-card-cabecalho {
+    position: relative;
+}
+
+#planos-h3-conteiner {
+    position: absolute;
+    top: -3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#card-popular h3 {
+    background-color: var(--roxo-primario);
+    padding: 1rem;
+    width: 7rem;
+    text-align: center;
+    line-height: 0;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    color: var(--planos-card-popular-h3);
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+}
+
+.planos-card h1 {
+    font-weight: 900;
+}
+
+
+
+
+@media(min-width: 768px) {
+    .planos {
+        padding: 7rem 8rem;
+    }
+
+    .planos-opcoes {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #card-popular h3 {
+        left: 6.8rem;
+    }
+
+    .planos-card:hover {
+        color: var(--planos-card-botao-color);
+        border: 1px solid var(--planos-borda-card-ativo);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
+    }
+
+    .planos-card:hover button {
+        background-color: var(--roxo-primario);
+        border-radius: .5rem;
+        color: white;
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
+    }
+
+    #card-popular:hover {
+        border: 5px solid #5600B2;
+    }
+
+    #card-popular button {
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
+    }
+
+    .planos-card button:active {
+        background-color: var(--planos-card-botao-hover);
+    }
+
+    #card-popular button:active {
+        background-color: var(--planos-card-botao-hover);
+    }
+}
