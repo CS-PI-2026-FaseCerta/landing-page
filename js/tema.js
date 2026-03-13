@@ -6,7 +6,7 @@ function iniciarTema() {
     if(tema == "light") {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-sol-roxo.png";
     } else {
-        document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-branca.png";
+        document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-roxa.png";
     }
 }
 
@@ -18,7 +18,7 @@ function alterarTema() {
     if(tema == "light") {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-sol-roxo.png";
     } else {
-        document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-branca.png";
+        document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-roxa.png";
     }
 
 }

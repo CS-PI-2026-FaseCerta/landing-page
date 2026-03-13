@@ -8,15 +8,53 @@ body[data-theme="light"] {
     --faq-bg-pergunta-aberta: #dadada;
     --faq-borda-superior-resposta: #c0bcc5;
     --faq-resposta-color: #475569;
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
 
-    --planos-titulo-secao: #5600B2;
+    --planos-titulo-secao: #5600B2; 
+    --planos-card-preco: #5600B2;
     --planos-borda-card: #E0DAE7;
     --planos-borda-card-ativo: #a980d6;
     --planos-sombra-card-ativo: rgb(177, 177, 177);
     --planos-card-descricao: #64748B;
     --planos-card-ativo-botao: white;
+    --planos-card-popular-h3: white;
     --planos-card-popular-botao-sombra: #8462a8;
     --planos-card-beneficios: #334155;
+    --planos-card-beneficios-retirado: #CBD5E1; 
+    --planos-card-botao-hover: #3a0079;
+}
+
+body[data-theme="dark"] {
+    --roxo-primario: #5600B2;
+    --bg-a: #1C1427;
+    --bg-b: #190F23;
+    --botao-trocar-tema-borda: #3a0079;
+
+    --faq-bg: var(--bg-a); 
+    --faq-details-bg: #251B2E;
+    --faq-titulo-secao: #5600B2;
+    --faq-borda-perguntas: #302739;
+    --faq-bg-pergunta-aberta: #dadada;
+    --faq-borda-superior-resposta: #302739;
+    --faq-resposta-color: rgb(169, 148, 189);
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+
+    --planos-bg: var(--bg-a); 
+    --planos-titulo-secao: #5600B2;
+    --planos-card-preco: white;
+    --planos-titulo-cabecalho: white;
+    --planos-borda-card: #2A2133;
+    --planos-borda-card-ativo: #a980d6;
+    --planos-sombra-card-ativo: rgb(43, 26, 63);
+    --planos-card-descricao: #64748B;
+    --planos-card-bg: #190F23;
+    --planos-card-botao-bg: #251B2E;
+    --planos-card-botao-color: white;
+    --planos-card-ativo-botao: white;
+    --planos-card-popular-bg: #1F0E31;
+    --planos-card-popular-h3: white;
+    --planos-card-popular-botao-sombra: #39284d;
+    --planos-card-beneficios: #CBD5E1;
     --planos-card-beneficios-retirado: #CBD5E1; 
     --planos-card-botao-hover: #3a0079;
 }
@@ -31,10 +69,21 @@ body[data-theme="light"] {
     border-radius: 50%;
     border: 1px solid var(--planos-sombra-card-ativo);
     cursor: pointer;
+
+    transition: 0.2s;
+}
+
+body[data-theme="dark"] #botao-trocar-tema {
+    background-color: var(--bg-a);
+    border: 1px solid var(--botao-trocar-tema-borda);
 }
 
 #botao-trocar-tema:hover {
-    background: var(--roxo-primario);
+    border: 5px solid var(--roxo-primario);
+}
+
+body[data-theme="dark"] #botao-trocar-tema:hover {
+    border: 5px solid var(--roxo-primario);
 }
 
 #icone-botao-tema {

@@ -5,14 +5,14 @@
     },
     {
         "pergunta": "Posso trocar de plano a qualquer momento?",
-        "resposta": "Sim, você pode fazer o upgrade ou downgrade do seu plano diretamente pelo painel administrativo. No caso de upgrade, adiferença de valor será calculada proporcionalmente."
+        "resposta": "Sim, você pode fazer o upgrade ou downgrade do seu plano diretamente pelo painel administrativo. No caso de upgrade, a diferença de valor será calculada proporcionalmente."
     },
     {
         "pergunta": "Os meus dados estão seguros?",
-        "resposta": "Utilizamos criptografia de ponta a ponta e backups diários em servidores AWS. Seus dados são sua prioridade e seguemtodas as normas da LGPD."
+        "resposta": "Utilizamos criptografia de ponta a ponta e backups diários em servidores AWS. Seus dados são sua prioridade e seguem todas as normas da LGPD."
     },
     {
         "pergunta": "Existe fidelidade no contrato?",
-        "resposta": "Não. Nossos planos são mensais e você pode cancelar quando quiser sem multas ocultas. Queremos que você fique conoscoporque ama o nosso produto."
+        "resposta": "Não. Nossos planos são mensais e você pode cancelar quando quiser sem multas ocultas. Queremos que você fique conosco porque ama o nosso produto."
     }
 ]
