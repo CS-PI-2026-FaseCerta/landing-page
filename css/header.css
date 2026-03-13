@@ -13,8 +13,14 @@ body {
   --bj: #ffffff;
   --cp: #5600b2;
 
-  --fs-a: 1.25rem; /*20px*/
-  --fs-p: 1.25rem;
+  --font-scale: 1;
+
+  --fs-h1: calc(2.25rem * var(--font-scale)); /*36px*/
+
+  --fs-a: calc(1.25rem * var(--font-scale)); /*20px*/
+  --fs-p1: calc(1.125rem * var(--font-scale)); /*18px*/
+  --fs-p2: calc(1rem * var(--font-scale)); /*16px*/
+  --fs-p3: calc(0.875rem * var(--font-scale)); /*14px*/
 }
 
 .btn {

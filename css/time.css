@@ -10,23 +10,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   gap: 1rem;
 }
 .time-text h2 {
   color: #5600b2;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: var(--fs-p3);
 }
 .time-text h1 {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: var(--fs-h1);
   text-align: center;
   margin: 0;
 }
 .time-text p {
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: var(--fs-p2);
   color: #475569;
   margin: 0;
 }
@@ -73,12 +74,12 @@
 
 .card-pessoal .nome {
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--fs-p1);
   margin-bottom: 0;
 }
 .card-pessoal .cargo {
   font-weight: 600;
-  font-size: 14px;
+  font-size: var(--fs-p3);
   margin-top: 0;
   color: #5600b2;
 }
