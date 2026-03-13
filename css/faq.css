@@ -24,7 +24,7 @@ body li {
 }
 
 .faq-cabecalho h2 {
-    color: #5600B2;
+    color: var(--roxo-primario);
     margin: 0;
     font-size: 1.3rem;
 }
@@ -48,12 +48,12 @@ body li {
 }
 
 .faq-details {
-    border: 1px solid #E0DAE7;
+    border: 1px solid var(--faq-borda-perguntas);
     border-radius: 1rem;
 }
 
 .faq-details[open] {
-    background: #F8FAFC;
+    background: var(--faq-bg-pergunta-aberta);
 }
 
 .faq-summary {
@@ -88,11 +88,11 @@ body li {
 }
 
 .faq-details p {
-    border-top: 1px solid #E0DAE7;
+    border-top: 1px solid var(--faq-borda-superior-resposta);
     padding: 1rem;
     font-size: .9rem;
     line-height: 1.3rem;
-    color: #475569;
+    color: var(--faq-resposta-color);
     margin: 0;
 }
 

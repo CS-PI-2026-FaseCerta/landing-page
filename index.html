@@ -6,15 +6,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    
-        <link rel="stylesheet" href="css/faq.css"> 
-        <link rel="stylesheet" href="css/planos.css">
+    <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/faq.css"> 
+    <link rel="stylesheet" href="css/planos.css">
 </head>
-<body>
+<body data-theme="light">
     <section class="planos">
             <div class="planos-cabecalho">
                 <h2>PLANOS E PREÇOS</h2>
@@ -54,7 +52,7 @@
 
                 <div class="planos-card" id="card-popular">
                     <div class="planos-card-cabecalho">
-                        <h3>MAIS POPULAR</h3>
+                        <div id="planos-h3-conteiner"><h3>MAIS POPULAR</h3></div>
                         <h2>Pro</h2>
                         <p>Para empresas que precisam de automação completa.</p>
                         <div class="planos-card-preco" aria-label="R$ 99 por mês">
@@ -153,5 +151,8 @@
 
         <script src="js/faq.js"></script>
     </section>
+
+    <button id="botao-trocar-tema"><img src="assets/img/icons/icone-sol-branco.png" alt="" id="icone-botao-tema"></button>
+    <script src="js/tema.js"></script>
 </body>
 </html>

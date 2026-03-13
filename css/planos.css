@@ -14,7 +14,7 @@
 }
 
 .planos-cabecalho h2 {
-    color: #5600B2;
+    color: var(--planos-titulo-secao);
     margin: 0;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
@@ -35,7 +35,7 @@
 
 .planos-card {
     padding: 2rem;
-    border: 1px solid #E0DAE7;
+    border: 1px solid var(--planos-borda-card);
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -46,13 +46,13 @@
 
 
 #card-popular {
-    border: 2px solid #5600B2;
+    border: 2px solid var(--roxo-primario);
 }
 
 @media (hover: none) {
     .planos-card-ativo {
-        border: 1px solid #a980d6;
-        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+        border: 1px solid var(--planos-borda-card-ativo);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
     }
 }
 
@@ -69,20 +69,20 @@
 }
 
 .planos-card-cabecalho p {
-    color: #64748B;
+    color: var(--planos-card-descricao);
     font-size: 0.9rem;
     line-height: 1.4rem;
 }
 
 
 #planos-card-valor {
-    color: #5600B2;
+    color: var(--roxo-primario);
     font-size: 2.4rem;
     font-weight: 900;
 }
 
 #planos-card-mes {
-    color: #64748B;
+    color: var(--planos-card-descricao);
     font-weight: 700;
 }
 
@@ -98,19 +98,19 @@
 
 @media (hover: none) {
     .planos-card-ativo button {
-        background-color: #5600B2;
+        background-color: var(--roxo-primario);
         border-radius: .5rem;
-        color: white;
+        color: var(--planos-card-ativo-botao);
     }
 }
 
 
 
 #card-popular button {
-    background-color: #5600B2;
+    background-color: var(--roxo-primario);
     border-radius: .5rem;
-    color: white;
-    box-shadow: 0 0.2rem 1rem #8462a8;
+    color: var(--planos-card-ativo-botao);
+    box-shadow: 0 0.2rem 1rem var(--planos-card-popular-botao-sombra);
 }
 
 .planos-card-beneficios {
@@ -123,7 +123,7 @@
 .planos-card-beneficios li {
     display: flex;
     gap: 1rem;
-    color: #334155;
+    color: var(--planos-card-beneficios);
     font-size: .9rem;
     font-weight: 600;
 }
@@ -134,7 +134,7 @@
 }
 
 #basico-item-retirado {
-    color: #CBD5E1;
+    color: var(--planos-card-beneficios-retirado);
     text-decoration: line-through;
 }
 
@@ -142,17 +142,22 @@
     position: relative;
 }
 
-#card-popular h3 {
+#planos-h3-conteiner {
     position: absolute;
     top: -3rem;
-    left: 3rem;
-    background-color: #5600B2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#card-popular h3 {
+    background-color: var(--roxo-primario);
     padding: 1rem;
-    width: fit-content;
+    width: 5.5rem;
     line-height: 0;
     border-radius: 2rem;
     font-size: 0.7rem;
-    color: white;
+    color: var(--bg);
     font-weight: 900;
 }
 
@@ -178,15 +183,15 @@
     }
 
     .planos-card:hover {
-        border: 1px solid #a980d6;
-        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+        border: 1px solid var(--planos-borda-card-ativo);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
     }
 
     .planos-card:hover button {
-        background-color: #5600B2;
+        background-color: var(--roxo-primario);
         border-radius: .5rem;
-        color: white;
-        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+        color: var(--bg);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
     }
 
     #card-popular:hover {
@@ -194,14 +199,14 @@
     }
 
     #card-popular button {
-        box-shadow: 0 0.3rem 2rem rgb(177, 177, 177);
+        box-shadow: 0 0.3rem 2rem var(--planos-sombra-card-ativo);
     }
 
     .planos-card button:active {
-        background-color: #3a0079;
+        background-color: var(--planos-card-botao-hover);
     }
 
     #card-popular button:active {
-        background-color: #3a0079;
+        background-color: var(--planos-card-botao-hover);
     }
 }
