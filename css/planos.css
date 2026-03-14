@@ -3,6 +3,7 @@ body {
 }
 
 .planos {
+    font-family: "Inter", sans-serif;
     padding: 7rem 1.8rem;
     display: flex;
     flex-direction: column;
