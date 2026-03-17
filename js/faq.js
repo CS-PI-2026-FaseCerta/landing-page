@@ -6,8 +6,8 @@ fetch('data/perguntas.json')
         faqItems.forEach((item, index) => {
             // garante que existe dados suficientes
             if (data[index]) {
-                const h1 = item.querySelector('.pergunta');
-                const p = item.querySelector('.resposta');
+                const h1 = item.querySelector('.question');
+                const p = item.querySelector('.answer');
 
                 h1.textContent = data[index].pergunta;
                 p.textContent = data[index].resposta;

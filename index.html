@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/time.css" />
     <link rel="stylesheet" href="css/contato.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/planos.css">
     <link href="https://fonts.googleapis.com" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -57,6 +59,10 @@
       </nav>
     </header>
     <main>
+
+      <button id="botao-trocar-tema"><img src="assets/img/icons/icone-sol-branco.png" alt="" id="icone-botao-tema"></button>
+      <script src="js/tema.js"></script>
+
       <!-- HERO -->
       <div class="content-hero recursos">
         <section id="recursos" class="hero">
@@ -147,6 +153,119 @@
         </section>
       </div>
 
+      <section class="planos">
+        <div class="planos-cabecalho">
+            <h2>PLANOS E PREÇOS</h2>
+            <h1>O plano certo para cada fase do seu negócio</h1>
+        </div>
+    
+        <div class="planos-opcoes">
+            <div class="planos-card">
+                <div class="planos-card-cabecalho">
+                    <h2>Básico</h2>
+                    <p>Ideal para pequenos empreendedores começando agora.</p>
+                    <div class="planos-card-preco" aria-label="R$ 49 por mês">
+                        <span id="planos-card-valor">R$ 49</span>
+                        <span id="planos-card-mes">/mês</span>
+                    </div>
+                </div>
+                <button>Assinar Básico</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Controle de entrada/saída
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Relatórios simples
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Suporte por e-mail
+                    </li>
+                    <li id="basico-item-retirado">
+                        <img id="icone-removido" src="assets/img/icons/icone-planos-removido.png"
+                            alt="Ícone de removido simbolizando item não incluído">
+                        Multi usuários
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="planos-card" id="card-popular">
+                <div class="planos-card-cabecalho">
+                    <div id="planos-h3-conteiner">
+                        <h3>MAIS POPULAR</h3>
+                    </div>
+                    <h2>Pro</h2>
+                    <p>Para empresas que precisam de automação completa.</p>
+                    <div class="planos-card-preco" aria-label="R$ 99 por mês">
+                        <span id="planos-card-valor">R$ 99</span>
+                        <span id="planos-card-mes">/mês</span>
+                    </div>
+                </div>
+                <button>Assinar Pro</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Tudo do Básico
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Relatórios Automáticos
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Multi-usuários (até 5)
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Suporte 24/7 prioritário
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="planos-card">
+                <div class="planos-card-cabecalho">
+                    <h2>Enterprise</h2>
+                    <p>Soluções customizadas para grandes operações.</p>
+                    <h1>Sob Consulta</h1>
+                </div>
+                <button>Falar com Vendas</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Usuário ilimitados
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        API personalizada
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Gerente de conta dedicado
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Treinamento presencial
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <script src="js/planos.js"></script>
+    </section>
+
       <section id="equipe" class="time">
         <div class="time-text">
           <h2>QUEM SOMOS</h2>
@@ -234,7 +353,6 @@
           </div>
           <div class="inner">
             <!--Daniel Alves Moura-->
-
             <div class="card-pessoal">
               <img
                 class="foto"
@@ -311,21 +429,21 @@
       </section>
 
       <section id="faq" class="faq">
-        <div class="faq-conteudo">
+        <div class="faq-content">
 
-            <header class="faq-cabecalho">
+            <header class="faq-header">
                 <h2>FAQ</h2>
                 <h1>Perguntas Frequentes</h1>
             </header>
 
-            <ul class="faq-questoes">
+            <ul class="faq-questions">
 
                 <li class="faq-item">
                     <details class="faq-details">
                         <summary class="faq-summary">
-                            <h3 class="pergunta"></h1>
+                            <h3 class="question"></h1>
                         </summary>
-                        <p class="resposta"></p>
+                        <p class="answer"></p>
                     </details>
                 </li>
                 
@@ -333,9 +451,9 @@
                 <li class="faq-item">
                     <details class="faq-details">
                         <summary class="faq-summary">
-                            <h3 class="pergunta"></h1>
+                            <h3 class="question"></h1>
                         </summary>
-                        <p class="resposta"></p>
+                        <p class="answer"></p>
                     </details>
                 </li>
                 
@@ -343,10 +461,10 @@
                 <li class="faq-item">
                     <details class="faq-details">
                         <summary class="faq-summary">
-                            <h3 class="pergunta">
+                            <h3 class="question">
                                 </h1>
                         </summary>
-                        <p class="resposta"></p>
+                        <p class="answer"></p>
                     </details>
                 </li>
                 
@@ -354,10 +472,10 @@
                 <li class="faq-item">
                     <details class="faq-details">
                         <summary class="faq-summary">
-                            <h3 class="pergunta">
+                            <h3 class="question">
                                 </h1>
                         </summary>
-                        <p class="resposta"></p>
+                        <p class="answer"></p>
                     </details>
                 </li>
                 
