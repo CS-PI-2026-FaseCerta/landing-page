@@ -70,7 +70,7 @@ body {
 
 
 
-.planos-card p,h1,h2,h3 {
+.planos-card p, .planos-card h1, .planos-card h2, .planos-card h3 {
     margin: 0;
 }
 
@@ -86,7 +86,7 @@ body {
     line-height: 1.4rem;
 }
 
-.planos-card-cabecalho h2, h1 {
+.planos-card-cabecalho h2, .planos-card-cabecalho h1 {
     color: var(--planos-titulo-cabecalho);
 }
 
@@ -171,6 +171,7 @@ body {
 #card-popular h3 {
     background-color: var(--roxo-primario);
     padding: 1rem;
+    /* width: 7rem; */
     text-align: center;
     line-height: 0;
     border-radius: 2rem;
