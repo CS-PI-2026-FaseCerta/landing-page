@@ -36,7 +36,7 @@ body {
 .planos-opcoes {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .planos-card {
@@ -195,6 +195,10 @@ body {
 
   #card-popular h3 {
     left: 6.8rem;
+  }
+
+  .planos-card {
+    width: 25%;
   }
 
   .planos-card:hover {
