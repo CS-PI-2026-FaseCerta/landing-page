@@ -50,6 +50,14 @@ body[data-theme="light"] {
     --contato-container-titulo-color: black;
     --contato-container-endereco-color: #475569;
     --contato-container-cartao-icon-bg: #e7dcf1;
+    --contato-formulario-bg: white;
+    --contato-formulario-borda: #e0dae7;
+    --contato-formulario-input-bg: white;
+    --contato-formulario-input-borda: #e0dae7;
+    --contato-formulario-input-titulo-color: #334155;
+    --contato-formulario-input-color: black;
+    --contato-formulario-input-placeholder-color: #64748B;
+    --contato-formulario-botao: rgb(190, 190, 190);
 }
 
 body[data-theme="dark"] {
@@ -113,7 +121,14 @@ body[data-theme="dark"] {
     --contato-container-titulo-color: white;
     --contato-container-endereco-color: #94A3B8;
     --contato-container-cartao-icon-bg: #1f0e31;
-
+    --contato-formulario-bg: #251b2e;
+    --contato-formulario-borda: #3b3243;
+    --contato-formulario-input-bg: #302739;
+    --contato-formulario-input-borda: #453d4d;
+    --contato-formulario-input-titulo-color: #CBD5E1;
+    --contato-formulario-input-color: white;
+    --contato-formulario-input-placeholder-color: #64748B;
+    --contato-formulario-botao: #3a0079;
 }
 
 #botao-trocar-tema {
