@@ -7,6 +7,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", system-ui, Arial, sans-serif;
+  background-color: var(--hero-bg);
 }
 
 :root {
@@ -52,7 +53,7 @@ body {
   right: 0;
   top: 0;
   z-index: 50;
-  background: rgba(250, 250, 250, 0.7);
+  background: var(--header-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid color-mix(in srgb, var(--header-borda) 70%, transparent);
@@ -67,10 +68,14 @@ body {
   letter-spacing: -0.025em;
   font-family: "Inter", sans-serif;
 }
+
+.logo span {
+  color: var(--header-logo-color);
+}
+
 .logo-icon {
   width: 25px;
   height: 25px;
-  background: var(--bj);
   color: #fff;
   display: grid;
   place-items: center;

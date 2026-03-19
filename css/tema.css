@@ -3,6 +3,8 @@ body[data-theme="light"] {
     --bg: white;
 
     --header-borda: #e2e8f0;
+    --header-bg: rgba(255, 255, 255, 0.7);
+    --header-logo-color: black;
 
     --hero-bg: #f7f5f8;
     --hero-paragrafo: #475569;
@@ -41,6 +43,8 @@ body[data-theme="dark"] {
     --botao-trocar-tema-borda: #3a0079;
 
     --header-borda: #302739;
+    --header-bg: #190f23c7;
+    --header-logo-color: white;
 
     --hero-bg: #190F23;
     --hero-paragrafo: #94A3B8;
