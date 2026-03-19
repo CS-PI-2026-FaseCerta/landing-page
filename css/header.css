@@ -21,6 +21,7 @@ body {
   --fs-p1: calc(1.125rem * var(--font-scale)); /*18px*/
   --fs-p2: calc(1rem * var(--font-scale)); /*16px*/
   --fs-p3: calc(0.875rem * var(--font-scale)); /*14px*/
+  --fs-p4: calc(0.7rem * var(--font-scale)); /*14px*/
 }
 
 .btn {

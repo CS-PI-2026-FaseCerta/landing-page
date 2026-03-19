@@ -32,7 +32,7 @@ function alterarFontSize() {
   escala += 0.1;
   console.log(escala);
 
-  if (escala > 1.7) {
+  if (escala > 1.5) {
     escala = 1;
   }
   document.documentElement.style.setProperty("--font-scale", escala);

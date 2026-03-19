@@ -3,7 +3,7 @@ body {
 }
 .mensagem-erro {
   color: #ef4444;
-  font-size: 0.85rem;
+  font-size: var(--fs-p2);
   margin-top: 4px;
   display: block;
 }
@@ -19,18 +19,18 @@ body {
 }
 
 #texto-contato {
-  font-size: 1rem;
+  font-size: var(--fs-p2);
   color: #5600b2;
 }
 
 #texto-vamos-conversar {
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: var(--fs-h1);
   margin: 0;
 }
 
 #texto-bloco {
-  font-size: 1.1rem;
+  font-size: var(--fs-p2);
   color: #475569;
   line-height: 1.5;
 }
@@ -56,13 +56,13 @@ body {
   margin: 0;
   color: #141018;
   margin-bottom: 0.2rem;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
 }
 
 .conteiner-cartao p {
   margin: 0;
   color: #64748b;
-  font-size: 0.9rem;
+  font-size: var(--fs-p3);
 }
 
 .cartao-icone {
@@ -84,7 +84,7 @@ body {
 .conteiner-formulario-conteudo label {
   margin: 0;
   color: #334155;
-  font-size: 0.8rem;
+  font-size: var(--fs-p3);
   font-weight: 700;
 }
 
@@ -96,7 +96,7 @@ body {
   height: 3rem;
   padding-left: 1rem;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
   color: #6b7280;
 }
 
@@ -112,7 +112,7 @@ body {
   border: 1px solid #e0dae7;
   border-radius: 0.5rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
   font-family: "Inter", sans-serif;
   color: #6b7280;
   box-sizing: border-box;
@@ -129,7 +129,7 @@ body {
   background-color: #5600b2;
   color: white;
   font-weight: 900;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
   box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
   align-items: center;
   padding-block: 0;
@@ -140,7 +140,7 @@ body {
 .conteiner-cartao a {
   color: #64748b;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--fs-p3);
 }
 
 .conteiner-cartao a:hover {
@@ -176,18 +176,18 @@ body {
   }
 
   #texto-contato {
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     color: #5600b2;
   }
 
   #texto-vamos-conversar {
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: var(--fs-h1);
     margin: 0;
   }
 
   #texto-bloco {
-    font-size: 1.1rem;
+    font-size: var(--fs-p1);
     color: #475569;
     line-height: 1.5;
   }
@@ -212,13 +212,13 @@ body {
     margin: 0;
     color: #141018;
     margin-bottom: 0.2rem;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
   }
 
   .conteiner-cartao p {
     margin: 0;
     color: #64748b;
-    font-size: 0.9rem;
+    font-size: var(--fs-p3);
   }
 
   .cartao-icone {
@@ -245,7 +245,7 @@ body {
   .conteiner-formulario-conteudo label {
     margin: 0;
     color: #334155;
-    font-size: 0.8rem;
+    font-size: var(--fs-p3);
     font-weight: 700;
   }
 
@@ -265,7 +265,7 @@ body {
     height: 3rem;
     padding-left: 1rem;
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     color: #6b7280;
   }
 
@@ -283,7 +283,7 @@ body {
     border: 1px solid #e0dae7;
     border-radius: 0.5rem;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     font-family: "Inter", sans-serif;
     color: #6b7280;
     box-sizing: border-box;
@@ -300,7 +300,7 @@ body {
     background-color: #5600b2;
     color: white;
     font-weight: 900;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
     align-items: center;
     padding-block: 0;
