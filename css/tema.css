@@ -2,15 +2,15 @@ body[data-theme="light"] {
     --roxo-primario: #5600B2;
     --bg: white;
 
-    --faq-bg: white;
-    --faq-titulo-secao: #5600B2;
-    --faq-borda-perguntas: #c0bcc5;
-    --faq-bg-pergunta-aberta: #dadada;
-    --faq-borda-superior-resposta: #c0bcc5;
-    --faq-resposta-color: #475569;
-    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
+    --header-borda: #e2e8f0;
 
-    --planos-titulo-secao: #5600B2; 
+    --hero-bg: #f7f5f8;
+    --hero-paragrafo: #475569;
+    --hero-titulo: black;
+    --hero-botao-video-borda: #e0dae7;
+    --hero-botao-video-color: #141018;
+
+    --planos-titulo-secao: #5600B2;
     --planos-card-preco: #5600B2;
     --planos-borda-card: #E0DAE7;
     --planos-borda-card-ativo: #a980d6;
@@ -20,8 +20,18 @@ body[data-theme="light"] {
     --planos-card-popular-h3: white;
     --planos-card-popular-botao-sombra: #8462a8;
     --planos-card-beneficios: #334155;
-    --planos-card-beneficios-retirado: #CBD5E1; 
+    --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --faq-bg: white;
+    --faq-titulo-secao: #5600B2;
+    --faq-borda-perguntas: #c0bcc5;
+    --faq-bg-pergunta-aberta: #dadada;
+    --faq-borda-superior-resposta: #c0bcc5;
+    --faq-resposta-color: #475569;
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
+
+    
 }
 
 body[data-theme="dark"] {
@@ -30,16 +40,15 @@ body[data-theme="dark"] {
     --bg-b: #190F23;
     --botao-trocar-tema-borda: #3a0079;
 
-    --faq-bg: var(--bg-a); 
-    --faq-details-bg: #251B2E;
-    --faq-titulo-secao: #5600B2;
-    --faq-borda-perguntas: #302739;
-    --faq-bg-pergunta-aberta: #dadada;
-    --faq-borda-superior-resposta: #302739;
-    --faq-resposta-color: rgb(169, 148, 189);
-    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+    --header-borda: #302739;
 
-    --planos-bg: var(--bg-a); 
+    --hero-bg: #190F23;
+    --hero-paragrafo: #94A3B8;
+    --hero-titulo: white;
+    --hero-botao-video-borda: #473F4F;
+    --hero-botao-video-color: white;
+
+    --planos-bg: var(--bg-a);
     --planos-titulo-secao: #5600B2;
     --planos-card-preco: white;
     --planos-titulo-cabecalho: white;
@@ -55,8 +64,18 @@ body[data-theme="dark"] {
     --planos-card-popular-h3: white;
     --planos-card-popular-botao-sombra: #39284d;
     --planos-card-beneficios: #CBD5E1;
-    --planos-card-beneficios-retirado: #CBD5E1; 
+    --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --faq-bg: var(--bg-a); 
+    --faq-details-bg: #251B2E;
+    --faq-titulo-secao: #5600B2;
+    --faq-borda-perguntas: #302739;
+    --faq-bg-pergunta-aberta: #dadada;
+    --faq-borda-superior-resposta: #302739;
+    --faq-resposta-color: rgb(169, 148, 189);
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+
 }
 
 #botao-trocar-tema {

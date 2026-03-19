@@ -5,10 +5,11 @@ function iniciarTema() {
     
     if(tema == "light") {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-sol-roxo.png";
+        document.getElementById("hero-icone-play").src = "assets/img/icons/play.png";
     } else {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-roxa.png";
     }
-}
+} 
 
 function alterarTema() {
     tema = tema == "light" ? "dark" : "light"
@@ -17,6 +18,7 @@ function alterarTema() {
 
     if(tema == "light") {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-sol-roxo.png";
+        document.getElementById("hero-icone-play").src = "assets/img/icons/play.png";
     } else {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-roxa.png";
     }
