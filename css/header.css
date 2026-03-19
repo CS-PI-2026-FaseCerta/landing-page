@@ -81,19 +81,19 @@ body {
   place-items: center;
 }
 .logo-icon img {
-  max-width: 25px;
+  max-width: 25px; 
   height: 25px;
 }
 
 .m-navlinks {
   display: none;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--header-borda);
   margin-top: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 1rem;
   flex-direction: column;
   gap: 1rem;
-  background-color: #ffffff;
+  background-color: var(--header-m-navlink-bg);
 }
 
 .m-navlinks a {
@@ -101,7 +101,7 @@ body {
   font-size: var(--fs-a);
   font-weight: 600;
   text-decoration: none;
-  color: inherit;
+  color: var(--header-navlink-color);
   display: block;
 }
 
@@ -186,7 +186,7 @@ body {
   font-weight: 600;
   font-size: var(--fs-a);
 
-  color: #1e293b;
+  color: var(--header-navlink-color);
 }
 .navlinks a:hover {
   color: var(--cp);

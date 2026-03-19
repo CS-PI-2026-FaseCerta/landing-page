@@ -5,6 +5,8 @@ body[data-theme="light"] {
     --header-borda: #e2e8f0;
     --header-bg: rgba(255, 255, 255, 0.7);
     --header-logo-color: black;
+    --header-navlink-color: #1e293b;
+    --header-m-navlink-bg: white;
 
     --hero-bg: #f7f5f8;
     --hero-paragrafo: #475569;
@@ -15,7 +17,7 @@ body[data-theme="light"] {
     --planos-titulo-secao: #5600B2;
     --planos-card-preco: #5600B2;
     --planos-borda-card: #E0DAE7;
-    --planos-borda-card-ativo: #a980d6;
+    --planos-borda-card-ativo: #a980d6; 
     --planos-sombra-card-ativo: rgb(177, 177, 177);
     --planos-card-descricao: #64748B;
     --planos-card-ativo-botao: white;
@@ -24,6 +26,12 @@ body[data-theme="light"] {
     --planos-card-beneficios: #334155;
     --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --time-titulo-color: black;
+    --time-paragrafo-color: #475569;
+    --time-card-pessoal-bg: white;
+    --time-card-pessoal-borda: #e0dae7;
+    --time-card-pessoal-nome-color: black;
 
     --faq-bg: white;
     --faq-titulo-secao: #5600B2;
@@ -45,6 +53,8 @@ body[data-theme="dark"] {
     --header-borda: #302739;
     --header-bg: #190f23c7;
     --header-logo-color: white;
+    --header-navlink-color: white;
+    --header-m-navlink-bg: #190F23;
 
     --hero-bg: #190F23;
     --hero-paragrafo: #94A3B8;
@@ -70,6 +80,12 @@ body[data-theme="dark"] {
     --planos-card-beneficios: #CBD5E1;
     --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --time-titulo-color: white;
+    --time-paragrafo-color: #94A3B8;
+    --time-card-pessoal-bg: #251b2e;
+    --time-card-pessoal-borda: #3b3243;
+    --time-card-pessoal-nome-color: white;
 
     --faq-bg: var(--bg-a); 
     --faq-details-bg: #251B2E;
