@@ -34,14 +34,22 @@ body[data-theme="light"] {
     --time-card-pessoal-nome-color: black;
 
     --faq-bg: white;
-    --faq-titulo-secao: #5600B2;
+    --faq-titulo-color: black;
+    --faq-subtitulo-color: #5600B2;
     --faq-borda-perguntas: #c0bcc5;
     --faq-bg-pergunta-aberta: #dadada;
     --faq-borda-superior-resposta: #c0bcc5;
     --faq-resposta-color: #475569;
+    --faq-pergunta-color: black;
     --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
 
-    
+    --contato-bg: white;
+    --contato-subtitulo-color: #5600B2;
+    --contato-titulo-color: black;
+    --contato-paragrafo-color: #475569;
+    --contato-container-titulo-color: black;
+    --contato-container-endereco-color: #475569;
+    --contato-container-cartao-icon-bg: #e7dcf1;
 }
 
 body[data-theme="dark"] {
@@ -88,13 +96,23 @@ body[data-theme="dark"] {
     --time-card-pessoal-nome-color: white;
 
     --faq-bg: var(--bg-a); 
-    --faq-details-bg: #251B2E;
-    --faq-titulo-secao: #5600B2;
+    --faq-details-bg: #190f23;
+    --faq-titulo-color: white;
+    --faq-subtitulo-color: #5600B2;
     --faq-borda-perguntas: #302739;
-    --faq-bg-pergunta-aberta: #dadada;
+    --faq-bg-pergunta-aberta: rgb(41, 29, 54);
     --faq-borda-superior-resposta: #302739;
-    --faq-resposta-color: rgb(169, 148, 189);
+    --faq-resposta-color: #94A3B8;
+    --faq-pergunta-color: white;
     --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+
+    --contato-bg: #190F23;
+    --contato-subtitulo-color: #5600B2;
+    --contato-titulo-color: white;
+    --contato-paragrafo-color: #94A3B8;
+    --contato-container-titulo-color: white;
+    --contato-container-endereco-color: #94A3B8;
+    --contato-container-cartao-icon-bg: #1f0e31;
 
 }
 

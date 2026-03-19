@@ -11,14 +11,18 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   padding: 1.5rem;
-  background: #f7f5f8;
+  background: var(--contato-bg);
 }
 
 .conteiner-contato-conteudo {
   margin-top: 5rem;
 }
 
-#texto-contato {
+.conteiner-texto p {
+  color: var(--contato-paragrafo-color);
+}
+
+#titulo-contato {
   font-size: var(--fs-p2);
   color: #5600b2;
 }
@@ -27,13 +31,10 @@ body {
   font-weight: 900;
   font-size: var(--fs-h1);
   margin: 0;
+  color: var(--contato-titulo-color);
 }
 
-#texto-bloco {
-  font-size: var(--fs-p2);
-  color: #475569;
-  line-height: 1.5;
-}
+
 
 .conteiner-enderecos {
   margin-bottom: 3rem;
@@ -54,15 +55,28 @@ body {
 
 .conteiner-cartao h3 {
   margin: 0;
-  color: #141018;
+  color: var(--contato-container-titulo-color);
   margin-bottom: 0.2rem;
   font-size: var(--fs-p2);
 }
 
 .conteiner-cartao p {
   margin: 0;
-  color: #64748b;
+  color: var(--contato-container-endereco-color);
   font-size: var(--fs-p3);
+}
+
+.conteiner-cartao-icone {
+  background-color: var(--contato-container-cartao-icon-bg);
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.conteiner-cartao img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .cartao-icone {
@@ -138,7 +152,7 @@ body {
 }
 
 .conteiner-cartao a {
-  color: #64748b;
+  color: var(--contato-container-endereco-color);
   text-decoration: none;
   font-size: var(--fs-p3);
 }
@@ -156,7 +170,7 @@ body {
     font-family: "Inter", sans-serif;
     font-style: normal;
     padding: 1.5rem;
-    background: #f7f5f8;
+    background: var(--contato-bg);
     gap: 1rem;
     padding: 4rem 10rem;
   }
@@ -186,12 +200,6 @@ body {
     margin: 0;
   }
 
-  #texto-bloco {
-    font-size: var(--fs-p1);
-    color: #475569;
-    line-height: 1.5;
-  }
-
   .conteiner-enderecos {
     margin-bottom: 3rem;
   }
@@ -210,14 +218,14 @@ body {
 
   .conteiner-cartao h3 {
     margin: 0;
-    color: #141018;
+    color: var(--contato-container-titulo-color);
     margin-bottom: 0.2rem;
     font-size: var(--fs-p2);
   }
 
-  .conteiner-cartao p {
+  .conteiner-cartao-endereco {
     margin: 0;
-    color: #64748b;
+    color: var(--contato-container-endereco-color);
     font-size: var(--fs-p3);
   }
 
