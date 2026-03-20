@@ -9,7 +9,8 @@
 
 .hero {
   margin: 4.5rem 2rem 0rem 2rem;
-  padding: 1rem 0 1rem 0;
+  /* padding: 1rem 0 1rem 0; */
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
   background: var(--hero-bg);
