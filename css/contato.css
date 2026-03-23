@@ -34,8 +34,6 @@ body {
   color: var(--contato-titulo-color);
 }
 
-
-
 .conteiner-enderecos {
   margin-bottom: 3rem;
 }
@@ -295,6 +293,7 @@ body {
   .textarea {
     width: 100%;
     border: 1px solid var(--contato-formulario-input-borda);
+    color: var(--contato-formulario-input-color);
     border-radius: 0.5rem;
     padding: 1rem;
     font-size: var(--fs-p2);
