@@ -8,7 +8,7 @@ function iniciarTema() {
     } else {
         document.getElementById("icone-botao-tema").src = "assets/img/icons/icone-lua-roxa.png";
     }
-}
+} 
 
 function alterarTema() {
     tema = tema == "light" ? "dark" : "light"

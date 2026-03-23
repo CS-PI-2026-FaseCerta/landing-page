@@ -2,26 +2,62 @@ body[data-theme="light"] {
     --roxo-primario: #5600B2;
     --bg: white;
 
-    --faq-bg: white;
-    --faq-titulo-secao: #5600B2;
-    --faq-borda-perguntas: #c0bcc5;
-    --faq-bg-pergunta-aberta: #dadada;
-    --faq-borda-superior-resposta: #c0bcc5;
-    --faq-resposta-color: #475569;
-    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
+    --header-borda: #e2e8f0;
+    --header-bg: rgba(255, 255, 255, 0.7);
+    --header-logo-color: black;
+    --header-navlink-color: #1e293b;
+    --header-m-navlink-bg: white;
 
-    --planos-titulo-secao: #5600B2; 
+    --hero-bg: #f7f5f8;
+    --hero-paragrafo: #475569;
+    --hero-titulo: black;
+    --hero-botao-video-borda: #e0dae7;
+    --hero-botao-video-color: #141018;
+
+    --planos-titulo-secao: #5600B2;
     --planos-card-preco: #5600B2;
     --planos-borda-card: #E0DAE7;
-    --planos-borda-card-ativo: #a980d6;
+    --planos-borda-card-ativo: #a980d6; 
     --planos-sombra-card-ativo: rgb(177, 177, 177);
     --planos-card-descricao: #64748B;
     --planos-card-ativo-botao: white;
     --planos-card-popular-h3: white;
     --planos-card-popular-botao-sombra: #8462a8;
     --planos-card-beneficios: #334155;
-    --planos-card-beneficios-retirado: #CBD5E1; 
+    --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --time-titulo-color: black;
+    --time-paragrafo-color: #475569;
+    --time-card-pessoal-bg: white;
+    --time-card-pessoal-borda: #e0dae7;
+    --time-card-pessoal-nome-color: black;
+
+    --faq-bg: white;
+    --faq-titulo-color: black;
+    --faq-subtitulo-color: #5600B2;
+    --faq-borda-perguntas: #c0bcc5;
+    --faq-bg-pergunta-aberta: #dadada;
+    --faq-borda-superior-resposta: #c0bcc5;
+    --faq-resposta-color: #475569;
+    --faq-pergunta-color: black;
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq.png);
+
+    --contato-bg: white;
+    --contato-subtitulo-color: #5600B2;
+    --contato-titulo-color: black;
+    --contato-paragrafo-color: #475569;
+    --contato-container-titulo-color: black;
+    --contato-container-endereco-color: #475569;
+    --contato-container-cartao-icon-bg: #e7dcf1;
+    --contato-formulario-bg: white;
+    --contato-formulario-borda: #e0dae7;
+    --contato-formulario-input-bg: white;
+    --contato-formulario-input-borda: #e0dae7;
+    --contato-formulario-input-titulo-color: #334155;
+    --contato-formulario-input-color: black;
+    --contato-formulario-input-placeholder-color: #64748B;
+    --contato-formulario-botao: rgb(190, 190, 190);
 }
 
 body[data-theme="dark"] {
@@ -30,16 +66,19 @@ body[data-theme="dark"] {
     --bg-b: #190F23;
     --botao-trocar-tema-borda: #3a0079;
 
-    --faq-bg: var(--bg-a); 
-    --faq-details-bg: #251B2E;
-    --faq-titulo-secao: #5600B2;
-    --faq-borda-perguntas: #302739;
-    --faq-bg-pergunta-aberta: #dadada;
-    --faq-borda-superior-resposta: #302739;
-    --faq-resposta-color: rgb(169, 148, 189);
-    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+    --header-borda: #302739;
+    --header-bg: #190f23c7;
+    --header-logo-color: white;
+    --header-navlink-color: white;
+    --header-m-navlink-bg: #190F23;
 
-    --planos-bg: var(--bg-a); 
+    --hero-bg: #190F23;
+    --hero-paragrafo: #94A3B8;
+    --hero-titulo: white;
+    --hero-botao-video-borda: #473F4F;
+    --hero-botao-video-color: white;
+
+    --planos-bg: var(--bg-a);
     --planos-titulo-secao: #5600B2;
     --planos-card-preco: white;
     --planos-titulo-cabecalho: white;
@@ -55,8 +94,41 @@ body[data-theme="dark"] {
     --planos-card-popular-h3: white;
     --planos-card-popular-botao-sombra: #39284d;
     --planos-card-beneficios: #CBD5E1;
-    --planos-card-beneficios-retirado: #CBD5E1; 
+    --planos-card-beneficios-retirado: #CBD5E1;
     --planos-card-botao-hover: #3a0079;
+
+    --time-titulo-color: white;
+    --time-paragrafo-color: #94A3B8;
+    --time-card-pessoal-bg: #251b2e;
+    --time-card-pessoal-borda: #3b3243;
+    --time-card-pessoal-nome-color: white;
+
+    --faq-bg: var(--bg-a); 
+    --faq-details-bg: #190f23;
+    --faq-titulo-color: white;
+    --faq-subtitulo-color: #5600B2;
+    --faq-borda-perguntas: #302739;
+    --faq-bg-pergunta-aberta: rgb(41, 29, 54);
+    --faq-borda-superior-resposta: #302739;
+    --faq-resposta-color: #94A3B8;
+    --faq-pergunta-color: white;
+    --faq-icone-flecha: url(../assets/img/icons/icone-flecha-faq-branca.png);
+
+    --contato-bg: #190F23;
+    --contato-subtitulo-color: #5600B2;
+    --contato-titulo-color: white;
+    --contato-paragrafo-color: #94A3B8;
+    --contato-container-titulo-color: white;
+    --contato-container-endereco-color: #94A3B8;
+    --contato-container-cartao-icon-bg: #1f0e31;
+    --contato-formulario-bg: #251b2e;
+    --contato-formulario-borda: #3b3243;
+    --contato-formulario-input-bg: #302739;
+    --contato-formulario-input-borda: #453d4d;
+    --contato-formulario-input-titulo-color: #CBD5E1;
+    --contato-formulario-input-color: white;
+    --contato-formulario-input-placeholder-color: #64748B;
+    --contato-formulario-botao: #3a0079;
 }
 
 #botao-trocar-tema {

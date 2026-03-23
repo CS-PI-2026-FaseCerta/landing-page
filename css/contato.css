@@ -3,7 +3,7 @@ body {
 }
 .mensagem-erro {
   color: #ef4444;
-  font-size: 0.85rem;
+  font-size: var(--fs-p2);
   margin-top: 4px;
   display: block;
 }
@@ -11,28 +11,27 @@ body {
   font-family: "Inter", sans-serif;
   font-style: normal;
   padding: 1.5rem;
-  background: #f7f5f8;
+  background: var(--contato-bg);
 }
 
 .conteiner-contato-conteudo {
   margin-top: 5rem;
 }
 
-#texto-contato {
-  font-size: 1rem;
+.conteiner-texto p {
+  color: var(--contato-paragrafo-color);
+}
+
+#titulo-contato {
+  font-size: var(--fs-p2);
   color: #5600b2;
 }
 
 #texto-vamos-conversar {
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: var(--fs-h1);
   margin: 0;
-}
-
-#texto-bloco {
-  font-size: 1.1rem;
-  color: #475569;
-  line-height: 1.5;
+  color: var(--contato-titulo-color);
 }
 
 .conteiner-enderecos {
@@ -54,15 +53,28 @@ body {
 
 .conteiner-cartao h3 {
   margin: 0;
-  color: #141018;
+  color: var(--contato-container-titulo-color);
   margin-bottom: 0.2rem;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
 }
 
 .conteiner-cartao p {
   margin: 0;
-  color: #64748b;
-  font-size: 0.9rem;
+  color: var(--contato-container-endereco-color);
+  font-size: var(--fs-p3);
+}
+
+.conteiner-cartao-icone {
+  background-color: var(--contato-container-cartao-icon-bg);
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.conteiner-cartao img {
+  width: 2rem;
+  height: 2rem;
 }
 
 .cartao-icone {
@@ -74,30 +86,34 @@ body {
 }
 
 .conteiner-formulario-conteudo {
-  background: white;
-  border: 1px solid #e0dae7;
+  background: var(--contato-formulario-bg);
+  border: 1px solid var(--contato-formulario-borda);
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
 }
 
 .conteiner-formulario-conteudo label {
   margin: 0;
-  color: #334155;
-  font-size: 0.8rem;
+  color: var(--contato-formulario-input-titulo-color);
+  font-size: var(--fs-p3);
   font-weight: 700;
 }
 
 .conteiner-formulario-conteudo input {
   margin: 0;
-  border: 1px solid #e0dae7;
+  border: 1px solid var(--contato-formulario-input-borda);
   border-radius: 0.5rem;
   width: 100%;
   height: 3rem;
   padding-left: 1rem;
   box-sizing: border-box;
-  font-size: 1rem;
-  color: #6b7280;
+  font-size: var(--fs-p2);
+  background-color: var(--contato-formulario-input-bg);
+  color: var(--contato-formulario-input-color);
+}
+
+.conteiner-formulario-conteudo input::placeholder {
+  color: var(--contato-formulario-input-placeholder-color);
 }
 
 .conteiner-campo {
@@ -109,16 +125,19 @@ body {
 
 .textarea {
   width: 100%;
-  border: 1px solid #e0dae7;
+  border: 1px solid var(--contato-formulario-input-borda);
   border-radius: 0.5rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: var(--fs-p2);
   font-family: "Inter", sans-serif;
-  color: #6b7280;
   box-sizing: border-box;
-
+  background-color: var(--contato-formulario-input-bg);
   min-height: 140px;
   resize: vertical;
+}
+
+.textarea::placeholder {
+  color: var(--contato-formulario-input-placeholder-color);
 }
 
 #formulario-botao {
@@ -129,8 +148,8 @@ body {
   background-color: #5600b2;
   color: white;
   font-weight: 900;
-  font-size: 1rem;
-  box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
+  font-size: var(--fs-p2);
+  box-shadow: 2px 5px 10px 0 var(--contato-formulario-botao);
   align-items: center;
   padding-block: 0;
   cursor: pointer;
@@ -138,9 +157,9 @@ body {
 }
 
 .conteiner-cartao a {
-  color: #64748b;
+  color: var(--contato-container-endereco-color);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: var(--fs-p3);
 }
 
 .conteiner-cartao a:hover {
@@ -156,7 +175,7 @@ body {
     font-family: "Inter", sans-serif;
     font-style: normal;
     padding: 1.5rem;
-    background: #f7f5f8;
+    background: var(--contato-bg);
     gap: 1rem;
     padding: 4rem 10rem;
   }
@@ -176,20 +195,14 @@ body {
   }
 
   #texto-contato {
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     color: #5600b2;
   }
 
   #texto-vamos-conversar {
     font-weight: 900;
-    font-size: 2.4rem;
+    font-size: var(--fs-h1);
     margin: 0;
-  }
-
-  #texto-bloco {
-    font-size: 1.1rem;
-    color: #475569;
-    line-height: 1.5;
   }
 
   .conteiner-enderecos {
@@ -210,15 +223,15 @@ body {
 
   .conteiner-cartao h3 {
     margin: 0;
-    color: #141018;
+    color: var(--contato-container-titulo-color);
     margin-bottom: 0.2rem;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
   }
 
-  .conteiner-cartao p {
+  .conteiner-cartao-endereco {
     margin: 0;
-    color: #64748b;
-    font-size: 0.9rem;
+    color: var(--contato-container-endereco-color);
+    font-size: var(--fs-p3);
   }
 
   .cartao-icone {
@@ -235,17 +248,16 @@ body {
   }
 
   .conteiner-formulario-conteudo {
-    background: white;
-    border: 1px solid #e0dae7;
+    background: var(--contato-formulario-bg);
+    border: 1px solid var(--contato-formulario-borda);
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
   }
 
   .conteiner-formulario-conteudo label {
     margin: 0;
-    color: #334155;
-    font-size: 0.8rem;
+    color: var(--contato-formulario-input-titulo-color);
+    font-size: var(--fs-p3);
     font-weight: 700;
   }
 
@@ -258,15 +270,15 @@ body {
 
   .conteiner-formulario-conteudo input {
     margin: 0;
-
-    border: 1px solid #e0dae7;
+    color: var(--contato-formulario-input-color);
+    border: 1px solid var(--contato-formulario-input-borda);
     border-radius: 0.5rem;
     width: 100%;
     height: 3rem;
     padding-left: 1rem;
     box-sizing: border-box;
-    font-size: 1rem;
-    color: #6b7280;
+    font-size: var(--fs-p2);
+    color: var(--contato-formulario-input-color);
   }
 
   .conteiner-nome-email {
@@ -280,14 +292,14 @@ body {
 
   .textarea {
     width: 100%;
-    border: 1px solid #e0dae7;
+    border: 1px solid var(--contato-formulario-input-borda);
+    color: var(--contato-formulario-input-color);
     border-radius: 0.5rem;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: var(--fs-p2);
     font-family: "Inter", sans-serif;
-    color: #6b7280;
     box-sizing: border-box;
-
+    background-color: var(--contato-formulario-input-bg);
     min-height: 140px;
     resize: vertical;
   }
@@ -300,8 +312,8 @@ body {
     background-color: #5600b2;
     color: white;
     font-weight: 900;
-    font-size: 1rem;
-    box-shadow: 2px 5px 10px 0 rgb(226, 226, 226);
+    font-size: var(--fs-p2);
+    box-shadow: 2px 5px 10px 0 var(--contato-formulario-botao);
     align-items: center;
     padding-block: 0;
     cursor: pointer;
