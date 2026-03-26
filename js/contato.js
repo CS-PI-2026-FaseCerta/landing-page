@@ -1,8 +1,9 @@
 // INICIALIZA EMAILJS
 
 (function () {
-    emailjs.init("SEU_PUBLIC_KEY");
+    emailjs.init("2SR4Gft5axhHlCnfV");
 })();
+
 
 
 // ELEMENTOS DO FORMULÁRIO
@@ -117,8 +118,8 @@ formulario.addEventListener("submit", function (evento) {
 
 
     emailjs.sendForm(
-        "SEU_SERVICE_ID",
-        "SEU_TEMPLATE_ID",
+        "service_teste",
+        "template_k31s2la",
         "#conteiner-formulario"
     )
 
