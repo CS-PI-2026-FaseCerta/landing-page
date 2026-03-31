@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FaseCerta | Gerencie o seu negocio com Inteligência</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/time.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/tema.css">
+    <link rel="stylesheet" href="css/planos.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/img/icons/icon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body data-theme="light"> 
+    <header>
+      <nav class="navbar">
+        <div class="navbar-inner">
+          <div class="logo">
+            <div class="logo-icon">
+              <img src="assets/img/icons/icon.png" alt="Logo do Fase Certa" />
+            </div>
+            <span> FaseCerta </span>
+          </div>
+          <div class="navlinks">
+            <a href="#recursos">Recursos</a>
+            <a href="#precos">Preços</a>
+            <a href="#equipe">Sobre</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="div-btn-head">
+            <!-- <button class="btn-font">A+</button> -->
+            <a class="btn" href="#contato">Começar Agora</a>
+          </div>
+          <button class="btn-menu" onclick="abrirMenu()">
+            <img src="assets/img/icons/menu_icon.png" alt="menu_icon" />
+          </button>
+        </div>
+        <div class="m-navlinks" id="m-navlinks">
+          <a href="#recursos">Recursos</a>
+          <a href="#precos">Preços</a>
+          <a href="#equipe">Sobre</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <button id="botao-trocar-tema"><img src="assets/img/icons/icone-sol-branco.png" alt="" id="icone-botao-tema"></button>
+      <script src="js/tema.js"></script>
+
+      <!-- HERO -->
+      <div class="content-hero recursos">
+        <section id="recursos" class="hero">
+          <div class="hero-text">
+            <h1>
+              Controle seu negócio com
+              <span style="color: #5600b2">Inteligência</span>
+            </h1>
+            <p>
+              Um aplicativo WEB focado em centralizar a gestão de serviços
+              elétricos (eliminando o papel e as planilhas), como orçamentos
+              realizados para os clientes/possíveis clientes, ordem de serviço,
+              execução em campo, assegurando produtividade da equipe, controle
+              financeiro e pós-venda.
+            </p>
+            <div class="hero-action">
+              <a class="btn" href="#contato">
+                Começar Agora
+                <img
+                  style="width: 1rem; height: 1rem"
+                  src="assets/img/icons/seta.png"
+                  alt="seta-para-direita"
+                />
+              </a>
+              <a
+                class="btn-video"
+                href="https://www.youtube.com/watch?v=nMpH7k0NPeI"
+              >
+                Ver Demonstração
+                <img
+                  style="width: 1.25rem; height: 1.25rem"
+                  src="assets/img/icons/play.png"
+                  alt="play"
+                  id="hero-icone-play"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="carrossel">
+            <div class="carrossel-board">
+              <div class="bolinha" style="background: #f87171"></div>
+              <div class="bolinha" style="background: #fbbf24"></div>
+              <div class="bolinha" style="background: #34d399"></div>
+            </div>
+            <div class="carrossel-viewport">
+              <figure class="carrossel-slide">
+                <img
+                  src="assets/img/carrossel/image01.png"
+                  alt="Smartphone exibindo gráfico de crescimento financeiro com uma moeda em destaque, ilustrando aumento de resultados em um sistema de gestão empresarial"
+                />
+              </figure>
+              <figure class="carrossel-slide">
+                <img
+                  src="assets/img/carrossel/image02.png"
+                  alt="Dashboard do sistema de gestão mostrando vendas totais, lucro líquido, ticket médio e gráfico de tendências de crescimento anual com tabela de projetos"
+                />
+              </figure>
+              <figure class="carrossel-slide">
+                <img
+                  src="assets/img/carrossel/image03.png"
+                  alt="Painel do sistema exibindo status de tarefas, gráfico de desempenho e tabela de horas registradas pelos participantes do projeto"
+                />
+              </figure>
+              <figure class="carrossel-slide">
+                <img
+                  src="assets/img/carrossel/image04.png"
+                  alt="Painel de gestão de equipe mostrando total de funcionários, taxa de rotatividade, produtividade e matriz de presença semanal"
+                />
+              </figure>
+            </div>
+            <button
+              class="carrossel-btn prev"
+              type="button"
+              aria-label="Imagem anterior"
+              onclick="imagemAnterior()"
+            >
+              ‹
+            </button>
+            <button
+              class="carrossel-btn next"
+              type="button"
+              aria-label="Próxima imagem"
+              onclick="proximaImagem()"
+            >
+              ›
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <section class="planos">
+        <div class="planos-cabecalho">
+            <h2>PLANOS E PREÇOS</h2>
+            <h1>O plano certo para cada fase do seu negócio</h1>
+        </div>
+    
+        <div class="planos-opcoes">
+            <div class="planos-card">
+                <div class="planos-card-cabecalho">
+                    <h2>Básico</h2>
+                    <p>Ideal para pequenos empreendedores começando agora.</p>
+                    <div class="planos-card-preco" aria-label="R$ 49 por mês">
+                        <span id="planos-card-valor">R$ 49</span>
+                        <span id="planos-card-mes">/mês</span>
+                    </div>
+                </div>
+                <button>Assinar Básico</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Controle de entrada/saída
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Relatórios simples
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Suporte por e-mail
+                    </li>
+                    <li id="basico-item-retirado">
+                        <img id="icone-removido" src="assets/img/icons/icone-planos-removido.png"
+                            alt="Ícone de removido simbolizando item não incluído">
+                        Multi usuários
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="planos-card" id="card-popular">
+                <div class="planos-card-cabecalho">
+                    <div id="planos-h3-conteiner">
+                        <h3>MAIS POPULAR</h3>
+                    </div>
+                    <h2>Pro</h2>
+                    <p>Para empresas que precisam de automação completa.</p>
+                    <div class="planos-card-preco" aria-label="R$ 99 por mês">
+                        <span id="planos-card-valor">R$ 99</span>
+                        <span id="planos-card-mes">/mês</span>
+                    </div>
+                </div>
+                <button>Assinar Pro</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Tudo do Básico
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Relatórios Automáticos
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Multi-usuários (até 5)
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Suporte 24/7 prioritário
+                    </li>
+                </ul>
+            </div>
+    
+            <div class="planos-card">
+                <div class="planos-card-cabecalho">
+                    <h2>Enterprise</h2>
+                    <p>Soluções customizadas para grandes operações.</p>
+                    <h1>Sob Consulta</h1>
+                </div>
+                <button>Falar com Vendas</button>
+                <ul class="planos-card-beneficios">
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Usuário ilimitados
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        API personalizada
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Gerente de conta dedicado
+                    </li>
+                    <li>
+                        <img src="assets/img/icons/icone-planos-verificado.png"
+                            alt="Ícone de verificado simbolizando item incluído">
+                        Treinamento presencial
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <script src="js/planos.js"></script>
+    </section>
+
+      <section id="equipe" class="time">
+        <div class="time-text">
+          <h2>QUEM SOMOS</h2>
+          <h1>Nossa Equipe de Especialistas</h1>
+          <p>
+            Desenvolvedores apaixonados por simplificar a gestão de negócios.
+          </p>
+        </div>
+        <div class="time-cards">
+          <div class="inner">
+            <!--Luiz Miguel-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/luizMiguel.png"
+                alt="Foto de Luiz Miguel, Product Owner da equipe"
+              />
+              <p class="nome">Luiz Miguel</p>
+              <p class="cargo">Product Owner</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                    alt="icone do @ arroba"
+                /></a>
+                <a target="_blank" href="https://github.com/luizmiguel016"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+            <!--Caio Scrofani-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/caio.png"
+                alt="Foto de Caio Scrofani, Scrum Master da equipe"
+              />
+              <p class="nome">Caio Scrofani</p>
+              <p class="cargo">Scrum Master</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                    alt="icone do @ arroba"
+                /></a>
+                <a target="_blank" href="https://github.com/CaioScrofani"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+            <!--Francisco Simões de Oliveira-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/francisco.png"
+                alt="Foto de Francisco Simões de Oliveira, desenvolvedor front-end"
+              />
+              <p class="nome">Francisco S. Oliveira</p>
+              <p class="cargo">Frontend Developer</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                  alt="icone do @ arroba"
+                /></a>
+                <a
+                  target="_blank"
+                  href="https://github.com/Francisco-Simoes-Oliveira"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="inner">
+            <!--Daniel Alves Moura-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/daniel.png"
+                alt="Foto de Daniel Alves Moura, desenvolvedor front-end"
+              />
+              <p class="nome">Daniel Alves Moura</p>
+              <p class="cargo">Frontend Developer</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                  alt="icone do @ arroba"
+                /></a>
+                <a target="_blank" href="https://github.com/danielalvesmoura"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+            <!--Gabriel Lucim-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/gabriel.png"
+                alt="Foto de Gabriel Lucim, desenvolvedor front-end"
+              />
+              <p class="nome">Gabriel Lucim</p>
+              <p class="cargo">Frontend Developer</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                   alt="icone do @ arroba"
+                /></a>
+                <a target="_blank" href="https://github.com/GabrielLucim"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+            <!--Victor Penha-->
+            <div class="card-pessoal">
+              <img
+                class="foto"
+                src="assets/img/perfil/victor.png"
+                alt="Foto de Victor Penha, desenvolvedor front-end"
+              />
+              <p class="nome">Victor Penha</p>
+              <p class="cargo">Frontend Developer</p>
+              <div class="redes-pessoal">
+                <a target="_blank" href="https://www.instagram.com/"
+                  ><img
+                    class="redes-pessoal-icon"
+                    src="assets/img/icons/icone-email-simp.png"
+                   alt="icone do @ arroba"
+                /></a>
+                <a target="_blank" href="https://github.com/Victor-p3"
+                  ><img
+                    class="redes-pessoal-icon link-icon"
+                    src="assets/img/icons/icone-link-simp.png"
+                    alt="Icone de Link"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq">
+        <div class="faq-content">
+
+            <header class="faq-header">
+                <h2>FAQ</h2>
+                <h1>Perguntas Frequentes</h1>
+            </header>
+
+            <ul class="faq-questions">
+
+                <li class="faq-item">
+                    <details class="faq-details">
+                        <summary class="faq-summary">
+                            <h3 class="question"></h3>
+                        </summary>
+                        <p class="answer"></p>
+                    </details>
+                </li>
+                
+
+                <li class="faq-item">
+                    <details class="faq-details">
+                        <summary class="faq-summary">
+                            <h3 class="question"></h3>
+                        </summary>
+                        <p class="answer"></p>
+                    </details>
+                </li>
+                
+
+                <li class="faq-item">
+                    <details class="faq-details">
+                        <summary class="faq-summary">
+                            <h3 class="question"></h3>
+                        </summary>
+                        <p class="answer"></p>
+                    </details>
+                </li>
+                
+
+                <li class="faq-item">
+                    <details class="faq-details">
+                        <summary class="faq-summary">
+                            <h3 class="question"></h3>
+                        </summary>
+                        <p class="answer"></p>
+                    </details>
+                </li>
+                
+            </ul>
+
+        </div>
+      </section>
+
+      <div class="i">
+        <button class="btn-font" onclick="alterarFontSize()">A+</button>
+      </div>
+      <section id="contato" aria-labelledby="titulo-contato">
+        <div class="conteiner-contato">
+          <div class="conteiner-contato-conteudo">
+            <section id="contato-enderecos">
+              <div class="conteiner-texto">
+                <h2 id="titulo-contato">CONTATO</h2>
+
+                <h1 id="texto-vamos-conversar">Vamos conversar?</h1>
+
+                <p>
+                  Tem alguma dúvida ou precisa de uma demonstração
+                  personalizada? Preencha o formulário e nossa equipe entrará em
+                  contato em breve.
+                </p>
+
+                <div class="conteiner-enderecos">
+                  <div class="conteiner-cartao">
+                    <div class="conteiner-cartao-icone">
+                      <img
+                        src="assets/icons/icone-email.png"
+                        alt="Icone de email"
+                        class="cartao-icone"
+                      />
+                    </div>
+
+                    <div>
+                      <h3>E-mail</h3>
+
+                      <p>
+                        <a
+                          href="https://mail.google.com/mail/?view=cm&fs=1&to=fasecerta0@gmail.com"
+                          target="_blank"  class="conteiner-cartao-endereco"
+                        >
+                          fasecerta0@gmail.com
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="conteiner-cartao">
+                    <div class="conteiner-cartao-icone">
+                      <img
+                        src="assets/icons/icone-telefone.png"
+                        alt="Icone de telefone"
+                        class="cartao-icone"
+                      />
+                    </div>
+
+                    <div>
+                      <h3>Telefone</h3>
+
+                      <p class="conteiner-cartao-endereco">(44) 9876-0927</p>
+                    </div>
+                  </div>
+
+                  <div class="conteiner-cartao">
+                    <div class="conteiner-cartao-icone">
+                      <img
+                        src="assets/icons/icone-whatsapp.png"
+                        alt="Icone do WhatsApp"
+                        class="cartao-icone"
+                      />
+                    </div>
+
+                    <div>
+                      <h3>WhatsApp</h3>
+
+                      <p>
+                        <a href="https://wa.me/554498760927" target="_blank" class="conteiner-cartao-endereco">
+                          Conversar no WhatsApp
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="conteiner-cartao">
+                    <div class="conteiner-cartao-icone">
+                      <img
+                        src="assets/icons/icone-endereco.png"
+                        alt="Icone de localização"
+                        class="cartao-icone"
+                      />
+                    </div>
+
+                    <div>
+                      <h3>Localização</h3>
+
+                      <p class="conteiner-cartao-endereco">Paranavaí, PR - Brasil</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="contato-formulario">
+              <form id="conteiner-formulario" novalidate>
+                <div class="conteiner-formulario-conteudo">
+                  <div class="conteiner-nome-email">
+                    <div class="conteiner-campo">
+                      <label for="nome">Nome completo</label>
+
+                      <input
+                        id="nome"
+                        name="from_name"
+                        type="text"
+                        placeholder="Digite seu nome completo"
+                        required
+                        aria-describedby="erro-nome"
+                      />
+
+                      <small
+                        id="erro-nome"
+                        class="mensagem-erro"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+
+                    <div class="conteiner-campo">
+                      <label for="email">E-mail</label>
+
+                      <input
+                        id="email"
+                        name="reply_to"
+                        type="email"
+                        placeholder="exemplo@email.com"
+                        required
+                        aria-describedby="erro-email"
+                      />
+
+                      <small
+                        id="erro-email"
+                        class="mensagem-erro"
+                        aria-live="polite"
+                      ></small>
+                    </div>
+                  </div>
+
+                  <div class="conteiner-campo">
+                    <label for="assunto">Assunto</label>
+
+                    <input
+                      id="assunto"
+                      name="subject"
+                      type="text"
+                      placeholder="Ex: Dúvida sobre a plataforma"
+                      required
+                      aria-describedby="erro-assunto"
+                    />
+
+                    <small
+                      id="erro-assunto"
+                      class="mensagem-erro"
+                      aria-live="polite"
+                    ></small>
+                  </div>
+
+                  <div class="conteiner-campo">
+                    <label for="mensagem">Mensagem</label>
+
+                    <textarea
+                      class="textarea"
+                      id="mensagem"
+                      name="message"
+                      placeholder="Descreva suas necessidades..."
+                      required
+                      aria-describedby="erro-mensagem"
+                    ></textarea>
+
+                    <small
+                      id="erro-mensagem"
+                      class="mensagem-erro"
+                      aria-live="polite"
+                    ></small>
+                  </div>
+
+                  <button type="submit" id="formulario-botao">
+                    Enviar Mensagem
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="conteiner-footer">
+          <div class="footer-conteudo">
+            <div class="footer-cabecalho">
+              <div class="footer-titulo">
+                <img src="assets/icons/icon.png" alt="Icone da logo" />
+
+                <h2>FaseCerta</h2>
+              </div>
+
+              <p>
+                Simplificando o gerenciamento de estoque para empresas que
+                querem crescer com inteligência e organização.
+              </p>
+            </div>
+
+            <div class="footer-links">
+              <ul>
+                <li><strong>Produto</strong></li>
+
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contato">Integrações</a></li>
+                <li><a href="#faq">Segurança</a></li>
+              </ul>
+
+              <ul>
+                <li><strong>Empresa</strong></li>
+
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#precos">Preços</a></li>
+              </ul>
+
+              <ul id="social">
+                <li><strong>Social</strong></li>
+
+                <li>
+                  <a
+                    href="https://github.com/CS-PI-2026-FaseCerta"
+                    target="_blank"
+                  >
+                    <img
+                      src="assets/icons/icone-github.png"
+                      alt="Icone do Github da equipe"
+                      class="links-icone"
+                    />
+
+                    GitHub
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    <img
+                      src="assets/icons/icone-compartilhar.png"
+                      alt="Icone de compartilhamento"
+                      class="links-icone"
+                    />
+
+                    Compartilhar
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-direitos">
+            <div class="footer-politicas">
+              <p>Política de Privacidade</p>
+              <p>Termos de Uso</p>
+            </div>
+
+            <p>© 2026 FaseCerta. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/header.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/contato.js"></script>
+  </body>
+</html>

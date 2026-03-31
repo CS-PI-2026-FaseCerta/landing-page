@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+  background-color: var(--hero-bg);
+}
+
+:root {
+  --bj: #ffffff;
+  --cp: #5600b2;
+
+  --font-scale: 1;
+
+  --fs-h1: calc(2.25rem * var(--font-scale)); /*36px*/
+
+  --fs-a: calc(1.25rem * var(--font-scale)); /*20px*/
+  --fs-p1: calc(1.125rem * var(--font-scale)); /*18px*/
+  --fs-p2: calc(1rem * var(--font-scale)); /*16px*/
+  --fs-p3: calc(0.875rem * var(--font-scale)); /*14px*/
+  --fs-p4: calc(0.7rem * var(--font-scale)); /*14px*/
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cp);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/*HEADER*/
+
+.navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 50;
+  background: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid color-mix(in srgb, var(--header-borda) 70%, transparent);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  font-family: "Inter", sans-serif;
+}
+
+.logo span {
+  color: var(--header-logo-color);
+}
+
+.logo-icon {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.logo-icon img {
+  max-width: 25px; 
+  height: 25px;
+}
+
+.m-navlinks {
+  display: none;
+  border-top: 1px solid var(--header-borda);
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--header-m-navlink-bg);
+}
+
+.m-navlinks a {
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-a);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--header-navlink-color);
+  display: block;
+}
+
+.m-navlinks a:hover {
+  background-color: #e9ebee;
+}
+
+.div-btn-head {
+  display: flex;
+  gap: 1rem;
+  width: 14%;
+}
+
+@media (max-width: 768px) {
+  .div-btn-head {
+    justify-content: center;
+    width: 40%;
+  }
+  .div-btn-head .btn {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+  }
+  .btn-font {
+    display: none;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 6%;
+    font-size: 2rem;
+    background: none;
+  }
+  .navbar-inner {
+    max-width: 100%;
+    padding: 0 16px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navlinks {
+    display: none;
+    width: 15rem;
+    gap: 32px;
+  }
+  .btn-menu {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: #475569;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-menu img {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-inner {
+    max-width: 100%;
+    padding: 0 40px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navlinks {
+    display: flex;
+    margin: 3rem;
+    width: 15rem;
+    gap: 2rem;
+  }
+  .btn-menu {
+    display: none;
+  }
+}
+.navlinks a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-a);
+
+  color: var(--header-navlink-color);
+}
+.navlinks a:hover {
+  color: var(--cp);
+}
+
+.i {
+  position: fixed;
+  z-index: 50;
+  display: flex;
+  bottom: 50px;
+  width: 100%;
+  justify-content: end;
+}
+
+.btn-font {
+  border: none;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6%;
+  font-size: 2rem;
+  padding: 2rem;
+  background: rgba(228, 227, 227, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid color-mix(in srgb, #e2e8f0 70%, transparent);
+  border-radius: 50%;
+}
+
+.btn-font:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .btn-font {
+    height: 1rem;
+    width: 1rem;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,18 @@
+[
+    {
+        "pergunta": "Como funciona o suporte?",
+        "resposta": "Oferecemos suporte via e-mail para o plano Básico e suporte via chat em tempo real 24/7 para os planos Pro e Enterprise. Nossa equipe técnica responde em média em menos de 15 minutos."
+    },
+    {
+        "pergunta": "Posso trocar de plano a qualquer momento?",
+        "resposta": "Sim, você pode fazer o upgrade ou downgrade do seu plano diretamente pelo painel administrativo. No caso de upgrade, a diferença de valor será calculada proporcionalmente."
+    },
+    {
+        "pergunta": "Os meus dados estão seguros?",
+        "resposta": "Utilizamos criptografia de ponta a ponta e backups diários em servidores AWS. Seus dados são sua prioridade e seguem todas as normas da LGPD."
+    },
+    {
+        "pergunta": "Existe fidelidade no contrato?",
+        "resposta": "Não. Nossos planos são mensais e você pode cancelar quando quiser sem multas ocultas. Queremos que você fique conosco porque ama o nosso produto."
+    }
+]

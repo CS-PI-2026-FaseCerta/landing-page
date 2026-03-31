@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+}
+.mensagem-erro {
+  color: #ef4444;
+  font-size: var(--fs-p2);
+  margin-top: 4px;
+  display: block;
+}
+.conteiner-contato {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  padding: 1.5rem;
+  background: var(--contato-bg);
+}
+
+.conteiner-contato-conteudo {
+  margin-top: 5rem;
+}
+
+.conteiner-texto p {
+  color: var(--contato-paragrafo-color);
+}
+
+#titulo-contato {
+  font-size: var(--fs-p2);
+  color: #5600b2;
+}
+
+#texto-vamos-conversar {
+  font-weight: 900;
+  font-size: var(--fs-h1);
+  margin: 0;
+  color: var(--contato-titulo-color);
+}
+
+.conteiner-enderecos {
+  margin-bottom: 3rem;
+}
+
+.conteiner-cartao {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.conteiner-cartao-icone {
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner-cartao h3 {
+  margin: 0;
+  color: var(--contato-container-titulo-color);
+  margin-bottom: 0.2rem;
+  font-size: var(--fs-p2);
+}
+
+.conteiner-cartao p {
+  margin: 0;
+  color: var(--contato-container-endereco-color);
+  font-size: var(--fs-p3);
+}
+
+.conteiner-cartao-icone {
+  background-color: var(--contato-container-cartao-icon-bg);
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.conteiner-cartao img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.cartao-icone {
+  height: 3rem;
+}
+
+#conteiner-formulario {
+  margin-bottom: 5rem;
+}
+
+.conteiner-formulario-conteudo {
+  background: var(--contato-formulario-bg);
+  border: 1px solid var(--contato-formulario-borda);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.conteiner-formulario-conteudo label {
+  margin: 0;
+  color: var(--contato-formulario-input-titulo-color);
+  font-size: var(--fs-p3);
+  font-weight: 700;
+}
+
+.conteiner-formulario-conteudo input {
+  margin: 0;
+  border: 1px solid var(--contato-formulario-input-borda);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 3rem;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  font-size: var(--fs-p2);
+  background-color: var(--contato-formulario-input-bg);
+  color: var(--contato-formulario-input-color);
+}
+
+.conteiner-formulario-conteudo input::placeholder {
+  color: var(--contato-formulario-input-placeholder-color);
+}
+
+.conteiner-campo {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.textarea {
+  width: 100%;
+  border: 1px solid var(--contato-formulario-input-borda);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: var(--fs-p2);
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  background-color: var(--contato-formulario-input-bg);
+  min-height: 140px;
+  resize: vertical;
+}
+
+.textarea::placeholder {
+  color: var(--contato-formulario-input-placeholder-color);
+}
+
+#formulario-botao {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 0.7rem;
+  border: none;
+  background-color: #5600b2;
+  color: white;
+  font-weight: 900;
+  font-size: var(--fs-p2);
+  box-shadow: 2px 5px 10px 0 var(--contato-formulario-botao);
+  align-items: center;
+  padding-block: 0;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.conteiner-cartao a {
+  color: var(--contato-container-endereco-color);
+  text-decoration: none;
+  font-size: var(--fs-p3);
+}
+
+.conteiner-cartao a:hover {
+  color: #5600b2;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .conteiner-contato {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    padding: 1.5rem;
+    background: var(--contato-bg);
+    gap: 1rem;
+    padding: 4rem 10rem;
+  }
+
+  #contato-enderecos {
+    flex: 1;
+  }
+
+  .conteiner-texto {
+    flex: 1;
+    padding-right: 10rem;
+  }
+
+  .conteiner-contato-conteudo {
+    margin-top: 5rem;
+    display: flex;
+  }
+
+  #texto-contato {
+    font-size: var(--fs-p2);
+    color: #5600b2;
+  }
+
+  #texto-vamos-conversar {
+    font-weight: 900;
+    font-size: var(--fs-h1);
+    margin: 0;
+  }
+
+  .conteiner-enderecos {
+    margin-bottom: 3rem;
+  }
+
+  .conteiner-cartao {
+    display: flex;
+    align-items: center;
+  }
+
+  .conteiner-cartao-icone {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteiner-cartao h3 {
+    margin: 0;
+    color: var(--contato-container-titulo-color);
+    margin-bottom: 0.2rem;
+    font-size: var(--fs-p2);
+  }
+
+  .conteiner-cartao-endereco {
+    margin: 0;
+    color: var(--contato-container-endereco-color);
+    font-size: var(--fs-p3);
+  }
+
+  .cartao-icone {
+    height: 4rem;
+  }
+
+  #contato-formulario {
+    flex: 1;
+  }
+
+  #conteiner-formulario {
+    margin-bottom: 5rem;
+    flex: 1;
+  }
+
+  .conteiner-formulario-conteudo {
+    background: var(--contato-formulario-bg);
+    border: 1px solid var(--contato-formulario-borda);
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+
+  .conteiner-formulario-conteudo label {
+    margin: 0;
+    color: var(--contato-formulario-input-titulo-color);
+    font-size: var(--fs-p3);
+    font-weight: 700;
+  }
+
+  .conteiner-campo {
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .conteiner-formulario-conteudo input {
+    margin: 0;
+    color: var(--contato-formulario-input-color);
+    border: 1px solid var(--contato-formulario-input-borda);
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 3rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    font-size: var(--fs-p2);
+    color: var(--contato-formulario-input-color);
+  }
+
+  .conteiner-nome-email {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .conteiner-campo {
+    flex: 1;
+  }
+
+  .textarea {
+    width: 100%;
+    border: 1px solid var(--contato-formulario-input-borda);
+    color: var(--contato-formulario-input-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    font-size: var(--fs-p2);
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    background-color: var(--contato-formulario-input-bg);
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  #formulario-botao {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: #5600b2;
+    color: white;
+    font-weight: 900;
+    font-size: var(--fs-p2);
+    box-shadow: 2px 5px 10px 0 var(--contato-formulario-botao);
+    align-items: center;
+    padding-block: 0;
+    cursor: pointer;
+
+    transition: 0.2s;
+  }
+
+  #formulario-botao:hover {
+    background-color: #3d007e;
+
+    transition: 0.2s;
+    transform: scale(1.02);
+  }
+
+  #formulario-botao:active {
+    background-color: #1f0041;
+    transform: scale(0.99);
+  }
+
+  @media (max-width: 900px) {
+    .conteiner-contato-conteudo {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .conteiner-nome-email {
+      flex-direction: column;
+    }
+  }
+}

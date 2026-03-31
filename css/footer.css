@@ -1,0 +1,147 @@
+ul {
+  list-style-type: none;
+}
+
+.conteiner-footer {
+  background: #141018;
+  color: white;
+  padding: 6rem 2rem;
+  font-family: "Inter", sans-serif;
+}
+
+.footer-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-titulo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-titulo h2 {
+  font-size: 1.8rem;
+}
+
+.footer-cabecalho p {
+  color: #94a3b8;
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.footer-links ul {
+  padding: 0;
+}
+
+.footer-links li {
+  color: #94a3b8;
+  margin-bottom: 1rem;
+}
+
+/* títulos */
+.footer-links li strong {
+  color: white;
+  font-weight: 700;
+}
+
+/* links */
+.footer-links a {
+  text-decoration: none;
+  color: #94a3b8;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+#social {
+  grid-column: 1 / span 2;
+}
+
+#social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* ICONES */
+
+#footer-icone {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.links-icone {
+  width: 22px;
+  height: 22px;
+}
+
+.footer-direitos {
+  color: #64748b;
+  font-size: var(--fs-p3);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: 2px solid #2b272f;
+  padding-top: 3rem;
+
+  gap: 1rem;
+}
+
+.footer-direitos div {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer-direitos p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .footer-conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-cabecalho {
+    width: 30%;
+  }
+
+  .footer-cabecalho p {
+    text-align: justify;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 4rem;
+    text-align: left;
+  }
+
+  #social {
+    grid-column: auto;
+  }
+
+  #social li a {
+    justify-content: flex-start;
+  }
+
+  .footer-direitos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
